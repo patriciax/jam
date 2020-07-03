@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="quienes_somos" style="height: 100vh;" >
+
+    </section>
+    <section id="nuestros_trabajos" style="height: 100vh;"  class="navscroll">
+
+    </section>
+    <section id="contacto" style="height: 100vh;" class="navscroll">
+
+    </section>
+    
+  <script src='assets/js/jquery.min.js'></script>
+    <script>
+     $(function (){
+      $(window).scroll(function(){
+         if ($(this).scrollTop() > 100) {
+          $('.navscroll').addClass("azul");
+         } else {
+          $(".navscroll").removeClass("azul");
+         }
+      });
+  });
+     
+    </script>
+    <style>
+        .navscroll {
+    background-color:purple;
+    color:yellow;
+    transition:background-color 500ms, color 500ms;
+}
+
+.navscroll.azul {
+    background-color:blue;
+    color:white;
+}
+    </style>
+    
+</body>
+
+</html>

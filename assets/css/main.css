@@ -1046,3 +1046,12 @@ button div {
 .main_servicios-jam_item img{
   width: 100%;
 }
+
+.graficas_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.servicio_jam-titulo-web  p{
+  color: #3D00D2;
+}
